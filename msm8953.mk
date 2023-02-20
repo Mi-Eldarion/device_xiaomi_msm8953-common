@@ -150,12 +150,9 @@ PRODUCT_PACKAGES += \
     libqdMetaData.system \
     libtinyxml
 
+
 # Dolby
 $(call inherit-product, vendor/dolby/ds/dolby-product.mk)
-
-# DPM
-PRODUCT_PACKAGES += \
-    libcutils_shim
 
 # DRM
 PRODUCT_PACKAGES += \
@@ -216,7 +213,6 @@ PRODUCT_PACKAGES += \
 
 # IMS
 PRODUCT_PACKAGES += \
-    libgui_shim \
     vendor.qti.hardware.camera.device@1.0
 
 # Input
