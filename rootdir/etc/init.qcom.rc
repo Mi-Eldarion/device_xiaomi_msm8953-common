@@ -281,6 +281,7 @@ on post-fs-data
 
     # Create directory for radio
     mkdir /data/vendor/radio 0770 system radio
+    rm /data/vendor/radio/shmbus
 
     # Create directory for modem_config
     mkdir /data/vendor/modem_config 0570 radio root
@@ -338,8 +339,7 @@ on post-fs-data
     chmod 2770 /data/vendor/perfd
     rm /data/vendor/perfd/default_values
 
-    # Create dir for TUI
-    mkdir /data/vendor/tui 0700 system drmrpc
+    mkdir /data/vendor/secure_element 0777 system system
 
     # Mark the copy complete flag to not completed
     write /data/vendor/radio/copy_complete 0
@@ -370,8 +370,8 @@ on post-fs-data
     mkdir /data/misc/sensors
     chmod 0775 /data/misc/sensors
 
-    #Create dir for TUI
-    mkdir /data/vendor/tui 0700 system system
+    # Create dir for TUI
+    mkdir /data/vendor/tui 0700 system drmrpc
 
 on property:hw.fm.init=*
     write /sys/module/radio_iris_transport/parameters/fmsmd_set ${hw.fm.init}
@@ -440,10 +440,6 @@ service vendor.sensors.qti /vendor/bin/sensors.qti
     user system
     group system
     writepid /dev/cpuset/system-background/tasks
-
-on property:ro.vendor.use_data_netmgrd=false
-    # netmgr not supported on specific target
-    stop vendor.netmgrd
 
 service loc_launcher /system/vendor/bin/loc_launcher
     class late_start
