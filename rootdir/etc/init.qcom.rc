@@ -398,6 +398,9 @@ on property:vold.decrypt=trigger_restart_framework
     start config_bt_addr
     restart vendor.camera-provider-2-4
     restart vendor.audio-hal
+    restart vendor.qcrild
+    exec /bin/sleep 2
+    restart vendor.qcrild2
     start wcnss-service
 
 on property:ro.vendor.iocgrp.config=1
