@@ -1,6 +1,5 @@
 # All unpinned blobs below are extracted from Fairphone/FP3/FP3:11/8901.4.A.0010/gms-f74c58a8:user/release-keys
 # daisy Package version: daisy-user 10 QKQ1.191002.002 V11.0.21.0.QDLMIXM release-keys
-# mido Package version: mido-user 7.0 NRD90M V11.0.2.0.NCFMIXM release-keys
 # PAN Package version: Nokia/Panther_00WW/PAN_sprout:11/RKQ1.200928.002/00WW_3_240:user/release-keys
 # sweet Package version: Redmi/sweet_global/sweet:12/SKQ1.210908.001/V13.0.3.0.SKFMIXM:user/release-keys
 
@@ -417,23 +416,11 @@ vendor/bin/msm_irqbalance
 vendor/etc/msm_irqbalance.conf
 vendor/etc/msm_irqbalance_little_big.conf
 
-# Listen - from daisy
-vendor/lib/hw/sound_trigger.primary.msm8953.so|991e0be9c5743d5d3394eb2f4b82740c3c0616f7
-vendor/lib/libadpcmdec.so|be5fdf08a08b635816381e61b6bbf2874c62f613
-vendor/lib/libgcs-calwrapper.so|96178681d6704bb457f006f9fa8b6bcc71513c8a
-vendor/lib/libgcs-ipc.so|05f718e7bf68b31ca1199f8812046234c00d9a3e
-vendor/lib/libgcs-osal.so|2daf1f34a595d218af88c79285743bafa2145e20
-vendor/lib/libgcs.so|8aac6d5adc83d1cf4b7346304b350b2a18920c44
-vendor/lib/liblistenjni.so|1a7273acbd33b6e5d3c7dd0957da2fdc903acc85
-vendor/lib/liblistensoundmodel2.so|d645cf28571a6cbe867b15dd1665822c713ec35e
-vendor/lib/libsmwrapper.so|efed6475b26cafc15fed591a9aaa68b38cf6a37b
-vendor/lib64/hw/sound_trigger.primary.msm8953.so|4ff47ab34dfd457a57a5bede70769fbbc63c240e
-vendor/lib64/libgcs-calwrapper.so|4d93fcb19b26033d4c76a8db04963e3be930b254
-vendor/lib64/libgcs-ipc.so|5854e7814fdcedcb2cb859858df0bce835afc3b3
-vendor/lib64/libgcs-osal.so|d2a09b2298c9cd1daa1d6573f244e5286fd984eb
-vendor/lib64/libgcs.so|e15de14c593069ea32dbdc304a3d604be8cc0896
-vendor/lib64/liblistenjni.so|4814b09f1d0c8d17516d1c6df7687b992311a884
-vendor/lib64/liblistensoundmodel2.so|13b37cbd54943834676872f534e6a51505bbcea7
+# Listen - from LA.UM.9.6.2.r1-04200-89xx.0
+vendor/lib/libadpcmdec.so|7a38d6b28b27cf663681ad077614a03164418f91
+vendor/lib/libcapiv2svacnn.so|927d89e3c65bd6b1d1028e1dc7318d98e288f510
+vendor/lib/libcapiv2vop.so|1515e1e4d37c01e1c8d3b819add1b5ca71d22f43
+vendor/lib/libsmwrapper.so|f0ee761c02c888e77d947bb87d162d9379bc1530
 
 # Media - from LA.UM.9.6.2.r1-04200-89xx.0
 lib/libFileMux.so|4e05cd5e9913311ad17543d204adcd6d60cc8754
