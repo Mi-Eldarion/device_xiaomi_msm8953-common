@@ -481,7 +481,7 @@ service charger /system/bin/charger
 on property:persist.sys.xtra-daemon.enabled=*
     restart vendor.loc_launcher
 
-service vendor.msm_irqbalance /vendor/bin/msm_irqbalance -f /system/vendor/etc/msm_irqbalance.conf
+service vendor.msm_irqbalance /vendor/bin/msm_irqbalance -f /system/vendor/etc/msm_irqbalance_little_big.conf
     class core
     user root
     group root
