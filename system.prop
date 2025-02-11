@@ -1,3 +1,8 @@
+# Audio
+audio.chk.cal.us=0
+audio.offload.disable=false
+ro.audio.soundfx.dirac=true
+
 # Fwk detect
 ro.vendor.qti.va_aosp.support=1
 
@@ -29,6 +34,15 @@ persist.data.netmgrd.qos.enable=true
 
 #system props for time-services
 persist.timed.enable=true
+
+#system prop for Bluetooth SOC type
+ro.bluetooth.library_name=libbluetooth_qti.so
+persist.vendor.btstack.enable.splita2dp=false
+
+#
+# System props for bluetooh
+# System prop to turn on hfp client
+bluetooth.hfp.client=1
 
 #Enable FR27607-RIL to send ONLINE cmd in bootup
 #persist.radio.poweron_opt=1
