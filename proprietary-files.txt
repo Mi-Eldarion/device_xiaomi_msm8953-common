@@ -281,11 +281,4 @@ vendor/bin/ptt_socket_app
 vendor/bin/wcnss_service
 
 # Misc
-vendor/etc/public.libraries.txt
-vendor/lib64/libqsocket.so
 vendor/lib64/libsoc_helper.so|affbc1cc49d3df3a6e174a21bf3fe79c7130d1c0
-
-# Misc (System)
-system/etc/public.libraries-qti.txt
-system_ext/etc/cdma_call_conf.xml
-system_ext/etc/spn-conf.xml
