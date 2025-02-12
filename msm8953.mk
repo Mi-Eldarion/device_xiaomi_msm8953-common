@@ -435,3 +435,6 @@ $(call inherit-product, vendor/xiaomi/msm8953-common/msm8953-common-vendor.mk)
 
 # Inherit the display proprietary files
 $(call inherit-product, vendor/xiaomi/mititanium-common-graphics/mititanium-common-graphics-vendor.mk)
+
+# Inherit the QC proprietary files
+$(call inherit-product, vendor/xiaomi/mititanium-common-qc/mititanium-common-qc-vendor.mk)
