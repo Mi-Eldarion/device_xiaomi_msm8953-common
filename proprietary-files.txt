@@ -1,7 +1,6 @@
 # All unpinned blobs below are extracted from Fairphone/FP3/FP3:11/8901.4.A.0010/gms-f74c58a8:user/release-keys
 # daisy Package version: daisy-user 10 QKQ1.191002.002 V11.0.21.0.QDLMIXM release-keys
 # PAN Package version: Nokia/Panther_00WW/PAN_sprout:11/RKQ1.200928.002/00WW_3_240:user/release-keys
-# sweet Package version: Redmi/sweet_global/sweet:12/SKQ1.210908.001/V13.0.3.0.SKFMIXM:user/release-keys
 
 # ADSP
 vendor/bin/adsprpcd
