@@ -62,15 +62,12 @@ persist.vendor.camera.display.lmax=1280x720
 vendor.camera.lowpower.record.enable=1
 vidc.enc.dcvs.extra-buff-count=2
 
-# Charger
-ro.charger.disable_init_blank=true
-ro.charger.enable_suspend=true
+# Cne
+persist.vendor.cne.feature=1
+persist.vendor.mwqem.enable=1
 
 # Crypto
 ro.crypto.volume.filenames_mode=aes-256-cts
-
-# Data Path Manager
-persist.vendor.dpmhalservice.enable=1
 
 # Display
 debug.egl.hw=0
@@ -100,13 +97,8 @@ vendor.display.disable_skip_validate=1
 vendor.display.enable_default_color_mode=1
 vendor.gralloc.enable_fb_ubwc=1
 
-# CNE
-persist.vendor.cne.feature=1
-
-# Data
-ro.vendor.use_data_netmgrd=true
-persist.vendor.data.mode=concurrent
-persist.vendor.data.iwlan.enable=true
+# DPM
+persist.vendor.dpmhalservice.enable=1
 
 # DRM
 drm.service.enabled=true
@@ -152,21 +144,17 @@ persist.vendor.qcomsysd.enabled=1
 
 # Radio
 persist.radio.multisim.config=dsds
-persist.vendor.data.profile_update=true
+persist.vendor.data.iwlan.enable=true
+persist.vendor.radio.add_power_save=1
 persist.vendor.radio.apm_sim_not_pwdn=1
 persist.vendor.radio.custom_ecc=1
 persist.vendor.radio.enableadvancedscan=false
+persist.vendor.radio.hw_mbn_update=0
+persist.vendor.radio.mt_sms_ack=30
 persist.vendor.radio.procedure_bytes=SKIP
 persist.vendor.radio.rat_on=combine
 persist.vendor.radio.sib16_support=1
-vendor.rild.libpath=/vendor/lib64/libril-qc-qmi-1.so
-
-# Telephony
-ro.telephony.default_network=20,20
-telephony.lteOnCdmaDevice=1
-persist.dbg.volte_avail_ovr=1
-persist.dbg.vt_avail_ovr=1
-persist.dbg.wfc_avail_ovr=1
+vendor.rild.libargs=-d /dev/smd0
 
 # Shutdown
 sys.vendor.shutdown.waittime=500
