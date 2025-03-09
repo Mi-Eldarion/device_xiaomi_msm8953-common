@@ -53,14 +53,25 @@ persist.vendor.qcom.bluetooth.enable.splita2dp=false
 persist.vendor.qcom.bluetooth.soc=pronto
 ro.vendor.bluetooth.wipower=false
 
+#force HAL1 for below packages
+vendor.camera.hal1.packagelist=com.facebook.katana,com.facebook.orca,com.instagram.android,com.viber.voip,com.whatsapp
+
+#properties for limiting preview size in camera
+persist.vendor.camera.display.umax=1920x1080
+persist.vendor.camera.display.lmax=1280x720
+
 # Camera
 camera.display.lmax=1280x720
 camera.display.umax=1920x1080
 camera.lowpower.record.enable=1
-persist.vendor.camera.display.umax=1920x1080
-persist.vendor.camera.display.lmax=1280x720
 vendor.camera.lowpower.record.enable=1
 vidc.enc.dcvs.extra-buff-count=2
+
+#PAN-26598.add by cdzk.2020.12.21.Front and rear video without flash
+persist.vendor.camera.hal1.enable=1
+
+#PAN-23114.cdzk.2020.12.21.add expose camera logicId3 switch for vts test.
+persist.vendor.camera.expose.logicId3=1
 
 # Cne
 persist.vendor.cne.feature=1
