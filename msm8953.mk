@@ -435,7 +435,7 @@ PRODUCT_COPY_FILES += \
 
 # Inherit MiTitanium QCOM HALs
 ifeq ($(TARGET_KERNEL_VERSION),4.9)
-$(call inherit-product-if-exists, hardware/mititanium-4.9/mititanium_qcom_hals.mk)
+$(call inherit-product, hardware/mititanium-4.9/mititanium_qcom_hals.mk)
 else ifeq ($(TARGET_KERNEL_VERSION),4.19)
 $(call inherit-product, hardware/mititanium-4.19/mititanium_qcom_hals.mk)
 endif
