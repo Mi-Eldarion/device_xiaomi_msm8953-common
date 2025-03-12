@@ -132,11 +132,7 @@ TARGET_TAP_TO_WAKE_NODE := "/proc/sys/dev/xiaomi_msm8953_touchscreen/enable_dt2w
 # Platform
 BOARD_USES_QCOM_HARDWARE := true
 TARGET_BOARD_PLATFORM := msm8953
-ifeq ($(USE_MITITANIUM_HALS),true)
-QCOM_SOONG_NAMESPACE := hardware/mititanium-$(TARGET_KERNEL_VERSION)
-else
-TARGET_ENFORCE_QSSI := true
-endif
+TARGET_ENFORCES_QSSI := true
 
 # Properties
 TARGET_ODM_PROP += $(COMMON_PATH)/odm.prop
