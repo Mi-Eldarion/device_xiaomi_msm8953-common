@@ -248,7 +248,7 @@ PRODUCT_PACKAGES += \
 
 # Lights
 PRODUCT_PACKAGES += \
-    android.hardware.light-service.xiaomi
+    android.hardware.lights-service.xiaomi_msm8953
 
 # Media
 PRODUCT_COPY_FILES += \
@@ -348,8 +348,7 @@ PRODUCT_PACKAGES += \
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
-    $(LOCAL_PATH) \
-    hardware/xiaomi
+    $(LOCAL_PATH)
 
 QCOM_SOONG_NAMESPACE := \
      $(LOCAL_PATH)/qcom-caf
