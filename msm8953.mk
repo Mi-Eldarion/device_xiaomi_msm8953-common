@@ -419,13 +419,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/WCNSS_cfg.dat:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/prima/WCNSS_cfg.dat \
     $(LOCAL_PATH)/wifi/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/WCNSS_qcom_cfg.ini
 
-# Inherit MiTitanium QCOM HALs
-ifeq ($(TARGET_KERNEL_VERSION),4.9)
-$(call inherit-product, hardware/mititanium-4.9/mititanium_qcom_hals.mk)
-else ifeq ($(TARGET_KERNEL_VERSION),4.19)
-$(call inherit-product, hardware/mititanium-4.19/mititanium_qcom_hals.mk)
-endif
-
 # Inherit the proprietary files
 $(call inherit-product, vendor/xiaomi/msm8953-common/msm8953-common-vendor.mk)
 
