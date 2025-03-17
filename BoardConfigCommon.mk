@@ -173,3 +173,6 @@ TARGET_HAS_BROKEN_WLAN_SET_INTERFACE := true
 
 # Inherit from the proprietary version
 include vendor/xiaomi/msm8953-common/BoardConfigVendor.mk
+
+# Inherit extra if exists
+ -include vendor/extra/BoardConfigExtra.mk
